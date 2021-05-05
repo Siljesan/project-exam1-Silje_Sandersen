@@ -1,0 +1,31 @@
+footer {
+  border-top: solid 1px;
+  width: auto;
+  margin: 6rem 6rem 0rem 6rem;
+}
+.footerCont {
+  display: flex;
+  justify-content: space-between;
+}
+.footerCont__logo {
+  text-align: center;
+}
+.footerCont__logo--title {
+  font-size: 1rem;
+}
+.footerCont__logo--tagline {
+  font-size: 0.8rem;
+}
+.footerCont__icon--item {
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+.footerContTwo {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.footerContTwo__item {
+  font-size: 0.8rem;
+  padding: 0.3rem;
+}
