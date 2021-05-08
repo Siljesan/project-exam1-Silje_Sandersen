@@ -1,0 +1,66 @@
+.heroBanner {
+  background-image: url(../../img/heroBanner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 30rem;
+  display: table;
+  box-shadow: 5px 5px 10px var(--dark-green);
+}
+.heroBanner__text {
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  font-weight: var(--light);
+}
+.heroBanner__text--h1 {
+  font-weight: var(--light);
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.heroBanner__text--p {
+  font-size: 1.5rem;
+}
+.heroBanner__text--cta {
+  margin-top: 3rem;
+  font-size: 1.2rem;
+}
+.heroBanner__text--cta a {
+  color: black;
+  text-decoration: none;
+}
+.heroBanner__text--cta a:hover {
+  padding-right: 1rem;
+}
+
+@media (max-width: 991px) {
+  .heroBanner {
+    height: 25rem;
+  }
+  .heroBanner__text--h1 {
+    font-size: 2rem;
+  }
+  .heroBanner__text--p {
+    font-size: 1rem;
+  }
+  .heroBanner__text--cta {
+    font-size: 0.8rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .heroBanner {
+    height: 18rem;
+  }
+  .heroBanner__text--h1 {
+    font-size: 1.4rem;
+  }
+  .heroBanner__text--p {
+    font-size: 1rem;
+  }
+  .heroBanner__text--cta {
+    font-size: 0.8rem;
+  }
+}

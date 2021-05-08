@@ -3,3 +3,17 @@ body {
   background-color: var(--light-green);
   font-family: var(--font);
 }
+main {
+  margin: var(--margins-desktop);
+}
+.danger {
+  border: solid 2px red;
+  width: 100%;
+  height: 3rem;
+}
+
+@media (max-width: 767px) {
+  main {
+    margin: var(--margins-mobile);
+  }
+}
