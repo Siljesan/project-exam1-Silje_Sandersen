@@ -33,6 +33,21 @@
 .heroBanner__text--cta a:hover {
   padding-right: 1rem;
 }
+.home__post {
+  width: 100%;
+  background-color: white;
+  box-shadow: 5px 5px 10px var(--dark-green);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20rem;
+  margin-top: 3rem;
+}
+.home__post--img {
+  width: 50%;
+  background-color: black;
+  height: 80%;
+}
 
 @media (max-width: 991px) {
   .heroBanner {
@@ -62,5 +77,10 @@
   }
   .heroBanner__text--cta {
     font-size: 0.8rem;
+  }
+  .home__post {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    height: 10rem;
   }
 }

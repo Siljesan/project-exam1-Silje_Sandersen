@@ -6,17 +6,20 @@ async function getPosts(url) {
         const result = await response.json();
         //console.log(result);
 
-        result.forEach(element => {
-            //console.log(element);
-            for(let i = 0; i < element.title.length; i++){
-                console.log(element.title[i])
+            for(let i = 0; i < result.length; i++){
+                console.log(result[i])
+                if(i==2){
+                    break
+                }
              document.querySelector('main').innerHTML += `
-            <div>
-            <h2>${element.title}</h2>
-            <p>${element.id}</p>
+            <div class="home__post">
+            <div class="home__post--info">
+            <h2>${result[i].title}</h2>
+            <p>${result[i].id}</p>
+            </div>
+            <div class="home__post--img"></div>
             </div>`   
-            }
-        });
+            };
 
     } catch (error) {
         document.querySelector('.alert').innerHTML += showAlertToUser('An error occured','danger')
