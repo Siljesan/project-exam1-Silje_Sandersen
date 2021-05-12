@@ -1,4 +1,4 @@
-const baseUrl = 'http://api.siljes.tech/wp-json/wp/v2/posts/';
+const baseUrl = 'https://noroffcors.herokuapp.com/'+'http://api.siljes.tech/wp-json/wp/v2/posts/';
 
 async function getPosts(url) {
     try {
