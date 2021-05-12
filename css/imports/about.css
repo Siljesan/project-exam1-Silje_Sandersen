@@ -1,7 +1,37 @@
 .about {
   text-align: center;
+  font-weight: var(--light);
 }
 .about__container {
   display: flex;
   justify-content: space-around;
+}
+.about__container--img {
+  width: 40%;
+}
+.about__container--text {
+  width: 50%;
+}
+
+@media (max-width: 991px) {
+  .about__container {
+    display: block;
+  }
+  .about__container--text {
+    width: 100%;
+  }
+  .about__container--img {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .about__container--text {
+    font-size: var(--font-mobile);
+  }
+  .about__container--img {
+    margin-top: 1.5rem;
+  }
 }
