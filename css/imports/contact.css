@@ -1,0 +1,29 @@
+.contact {
+  display: flex;
+  justify-content: space-between;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.contact__form--label {
+  padding-top: 0.8rem;
+  padding-bottom: 0.3rem;
+}
+.contact__form--input {
+  background: none;
+  border: solid 2px black;
+}
+.contact__form--submit {
+  background: none;
+  border: solid 3px black;
+  width: 30%;
+  margin-top: 1rem;
+  font-family: var(--font);
+  font-size: 1.2rem;
+}
+.contact__info--img {
+  width: 15rem;
+  margin-right: 10rem;
+}
