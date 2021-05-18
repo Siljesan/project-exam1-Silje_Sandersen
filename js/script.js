@@ -4,22 +4,33 @@ async function getPosts(url) {
     try {
         const response = await fetch(url);
         const result = await response.json();
-        //console.log(result);
-
-            for(let i = 0; i < result.length; i++){
-                console.log(result[i])
-                if(i==2){
-                    break
-                }
-             document.querySelector('main').innerHTML += `
-            <div class="home__post">
+        console.log(result);
+        result.forEach(element => {
+            //count++
+            document.querySelector('main').innerHTML += `
+            <a href="recipe.html?id=${element.id}"><div class="home__post">
             <div class="home__post--info">
-            <h2>${result[i].title}</h2>
-            <p>${result[i].id}</p>
+            <h2>${element.title.rendered}</h2>
+            <p>${element.excerpt.rendered}</p>
             </div>
-            <div class="home__post--img"></div>
-            </div>`   
-            };
+            <div class="home__post--img"><img href=""></div>
+            </div></a>`
+        });
+
+            //for(let i = 0; i < result.length; i++){
+            //    console.log(result[i])
+            //    if(i==2){
+            //        break
+            //    }
+            // document.querySelector('main').innerHTML += `
+            //<div class="home__post">
+            //<div class="home__post--info">
+            //<h2>${result[i].title}</h2>
+            //<p>${result[i].id}</p>
+            //</div>
+            //<div class="home__post--img"></div>
+            //</div>`   
+            //};
 
     } catch (error) {
         document.querySelector('.alert').innerHTML += showAlertToUser('An error occured','danger')
