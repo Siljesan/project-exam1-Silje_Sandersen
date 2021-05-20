@@ -8,7 +8,11 @@ async function getDetails(recipeId) {
         const result = await response.json();
         console.log(result);
 
+        result.content.forEach(element => {
+            console.log(element.rendered)
+        });
         for (let i = 0; i < result.content.length; i++){
+            console.log(result.content[i])
             document.querySelector('main') += `
             <div>
                 ${result.content[i].rendered}

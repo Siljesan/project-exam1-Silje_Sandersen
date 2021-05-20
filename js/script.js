@@ -1,4 +1,6 @@
 const baseUrl = 'https://noroffcors.herokuapp.com/'+'http://api.siljes.tech/wp-json/wp/v2/posts/';
+//let slideIndex = 0;
+//showSlides();
 
 async function getPosts(url) {
     try {
@@ -6,31 +8,24 @@ async function getPosts(url) {
         const result = await response.json();
         console.log(result);
         result.forEach(element => {
-            //count++
-            document.querySelector('main').innerHTML += `
-            <a href="recipe.html?id=${element.id}"><div class="home__post">
-            <div class="home__post--info">
-            <h2>${element.title.rendered}</h2>
-            <p>${element.excerpt.rendered}</p>
-            </div>
-            <div class="home__post--img"><img href=""></div>
-            </div></a>`
+    //count++
+        document.querySelector('main').innerHTML += `
+        <a href="recipe.html?id=${element.id}"><div class="home__post">
+        <div class="home__post--info">
+        <h2>${element.title.rendered}</h2>
+        <p>${element.excerpt.rendered}</p>
+        </div>
+        <div class="home__post--img"><img href=""></div>
+        </div></a>`
         });
-
-            //for(let i = 0; i < result.length; i++){
-            //    console.log(result[i])
-            //    if(i==2){
-            //        break
-            //    }
-            // document.querySelector('main').innerHTML += `
-            //<div class="home__post">
-            //<div class="home__post--info">
-            //<h2>${result[i].title}</h2>
-            //<p>${result[i].id}</p>
-            //</div>
-            //<div class="home__post--img"></div>
-            //</div>`   
-            //};
+        //    result.forEach(element => {
+            //count++
+        //    document.querySelector('.slide-container').innerHTML += `
+        //    <div class="slide fade">
+        //    <img class="slide__img" src="" alt="">
+        //    <h3 class="slide__caption">${element.title.rendered}</h3>
+        //    </div>`
+        //    });
 
     } catch (error) {
         document.querySelector('.alert').innerHTML += showAlertToUser('An error occured','danger')
@@ -42,3 +37,15 @@ async function getPosts(url) {
 };
 
 getPosts(baseUrl);
+
+//function showSlides() {
+//    const slides = document.querySelector('.slide');
+//    for (let i = 0; i < slides.length; i++) {
+//        slides[i].style.display = "none";
+//    }
+//    slideIndex++;
+//    if(slideIndex > slides.length) {slideIndex = 1}
+//    slides[slideIndex-1].style.display = "block";
+//    setTimeout(showSlides, 2000);
+//}
+

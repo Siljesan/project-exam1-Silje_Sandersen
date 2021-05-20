@@ -10,6 +10,7 @@
   margin: 0.5rem;
   text-align: center;
   position: relative;
+  box-shadow: 5px 5px 10px var(--dark-green);
 }
 .cookbook__post--img {
   background-color: black;
@@ -26,7 +27,7 @@
   margin-bottom: 0.8rem;
   margin-left: auto;
   margin-right: auto;
-  left: 0;
+  left: 18%;
   bottom: 0;
   text-align: center;
 }
