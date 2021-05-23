@@ -1,0 +1,15 @@
+.recipeHero {
+  height: 40%;
+  margin: 0 auto;
+}
+.recipe__tips {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.recipe__tips--text {
+  width: 50%;
+}
+.recipeImg {
+  width: 40%;
+}

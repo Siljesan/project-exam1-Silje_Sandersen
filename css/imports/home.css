@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 .heroBanner {
   background-image: url(../../img/heroBanner.jpg);
   background-repeat: no-repeat;
@@ -62,6 +65,7 @@
 }
 .slide__img {
   background-color: black;
+  width: 100%;
 }
 .prev,
 .next {
@@ -87,6 +91,7 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 .caption {
+  font-size: 0.9rem;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;

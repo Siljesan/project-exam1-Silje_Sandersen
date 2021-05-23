@@ -11,7 +11,7 @@ async function getDetails(recipeId) {
 
             document.querySelector('main').innerHTML += `
             <h1>${result.title.rendered}</h1>
-            <section>
+            <section class="recipe-container">
                 ${result.content.rendered}
             </section>`
 
