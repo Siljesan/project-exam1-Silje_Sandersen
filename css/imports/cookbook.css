@@ -2,6 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 1.5rem;
+  width: 100%;
 }
 .cookbook__post {
   background-color: white;
@@ -27,7 +29,7 @@
   margin-bottom: 0.8rem;
   margin-left: auto;
   margin-right: auto;
-  left: 18%;
+  left: 17%;
   bottom: 0;
   text-align: center;
 }
@@ -38,17 +40,18 @@
     height: 18rem;
   }
   .cookbook__post--btn {
-    width: 70%;
+    width: 80%;
     font-size: 0.8rem;
   }
 }
 
 @media (max-width: 767px) {
   .cookbook__post {
-    width: 8rem;
+    width: 45%;
     height: 13rem;
+    margin: 0.2rem;
   }
   .cookbook__post--btn {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
   }
 }
