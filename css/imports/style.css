@@ -23,8 +23,23 @@ a {
   color: black;
 }
 
+@media (max-width: 991px) {
+}
+
 @media (max-width: 767px) {
   main {
     margin: var(--margins-mobile);
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: var(--font-mobile);
   }
 }

@@ -31,3 +31,24 @@
   bottom: 0;
   text-align: center;
 }
+
+@media (max-width: 991px) {
+  .cookbook__post {
+    width: 13rem;
+    height: 18rem;
+  }
+  .cookbook__post--btn {
+    width: 70%;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .cookbook__post {
+    width: 8rem;
+    height: 13rem;
+  }
+  .cookbook__post--btn {
+    font-size: 0.5rem;
+  }
+}
