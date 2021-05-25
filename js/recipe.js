@@ -15,6 +15,11 @@ async function getDetails(recipeId) {
                 ${result.content.rendered}
             </section>`
 
+            document.getElementsByClassName('.recipeHero').onclick = function(){
+                document.getElementById('myModal').style.display = 'block';
+                document.getElementById('img01').src = result.better_featured_image.source_url;
+            }
+
     } catch (error) {
         document.querySelector('.alert').innerHTML += showAlertToUser('An error occured','danger');
     } finally {
