@@ -13,7 +13,7 @@ async function getPosts(url) {
                 <h2>${element.title.rendered}</h2>
                 <p>${element.excerpt.rendered}</p>
                 </div>
-                <div class="home__post--img"><img src="https://api.siljes.tech/wp-json/wp/v2/media/${element.featured_media}"></div>
+                <div class="home__post--img"><img class="featured--img" src="${element.better_featured_image.source_url}"></div>
                 </div></a>`
                 });
 

@@ -9,7 +9,7 @@ async function getPosts(url) {
             //count++
             document.querySelector('.cookbook').innerHTML += `
             <a href="recipe.html?id=${element.id}"><div class="cookbook__post">
-            <div class="cookbook__post--img"><img href=""></div>
+            <div class="cookbook__post--img"><img class="featured--img" src="${element.better_featured_image.source_url}"></div>
             <h2>${element.title.rendered}</h2>
             <a href="recipe.html?id=${element.id}"><button class="cookbook__post--btn">Check out recipe!</button></a>
             </div></a>`
