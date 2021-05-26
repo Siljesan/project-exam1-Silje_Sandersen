@@ -6,6 +6,8 @@ async function getPosts(url) {
         const result = await response.json();
         console.log(result);
 
+        document.querySelector('.loading').classList.add('hide');
+
         for(let i = 0; i < result.length; i++){
 
             if(i === 2){ break; }

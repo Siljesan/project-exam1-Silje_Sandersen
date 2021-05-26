@@ -9,6 +9,8 @@ async function getDetails(recipeId) {
         console.log(result);
         console.log(result.content.rendered)
 
+        document.querySelector('.loading').classList.add('hide');
+
         document.title = `What's Cookin' | ${result.title.rendered}`;
 
             document.querySelector('main').innerHTML += `
