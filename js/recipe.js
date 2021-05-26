@@ -19,10 +19,17 @@ async function getDetails(recipeId) {
                 ${result.content.rendered}
             </section>`
 
-            document.getElementsByClassName('recipeHero--img').onclick = function(){
+            const imgUrl = result.better_featured_image.source_url;
+            const imgAlt = result.better_featured_image.alt_text;
+            document.getElementById('img01').innerHTML += `<img class="modal-content" src="${imgUrl}" alt="${imgAlt}">`;
+
+            document.querySelector('.recipeHero--img').onclick = function(){
                 document.getElementById('myModal').style.display = 'block';
-                document.getElementById('img01').src = this.src;
-            }
+            };
+
+            document.querySelector('#myModal').onclick = function(){
+                document.getElementById('myModal').style.display = 'none';
+            };
 
     } catch (error) {
         document.querySelector('.alert').innerHTML += showAlertToUser('An error occured','danger');
