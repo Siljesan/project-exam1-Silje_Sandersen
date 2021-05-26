@@ -6,16 +6,28 @@ async function getPosts(url) {
         const result = await response.json();
         console.log(result);
 
-        result.forEach(element => {
-                document.querySelector('.postCard').innerHTML += `
-                <a href="recipe.html?id=${element.id}"><div class="home__post">
-                <div class="home__post--info">
-                <h2>${element.title.rendered}</h2>
-                <p>${element.excerpt.rendered}</p>
-                </div>
-                <div class="home__post--img"><img class="featured--img" src="${element.better_featured_image.source_url}"></div>
-                </div></a>`
-                });
+        for(let i = 0; i < result.length; i++){
+
+            if(i === 2){ break; }
+
+            for(let i = 0; i < result[i].title.length; i++){}
+            for(let i = 0; i < result[i].excerpt.length; i++){}
+            for(let i = 0; i < result[i].better_featured_image.length; i++){}
+
+            document.querySelector('.postCard').innerHTML += `
+	        <a href="recipe.html?id=${result[i].id}"><div class="home__post">
+	        <div class="home__post--info">
+	        <h2>${result[i].title.rendered}</h2>
+	        <p>${result[i].excerpt.rendered}</p>
+            <div class="home__post--cta">
+            <p>Read more!</p>
+            <i class="fas fa-chevron-right"></i>
+            </div>
+	        </div>
+	        <div class="home__post--img"><img class="featured--img" src="${result[i].better_featured_image.source_url}"></div>
+	        </div></a>`
+
+        };
 
     } catch (error) {
         document.querySelector('.alert').innerHTML += showAlertToUser('An error occured','danger')
@@ -28,5 +40,3 @@ async function getPosts(url) {
 
 
 getPosts(baseUrl);
-
-

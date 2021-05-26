@@ -29,6 +29,7 @@
   font-family: var(--font);
   font-weight: var(--light);
   font-size: 1rem;
+  padding: 0.3rem;
   position: absolute;
   margin-bottom: 0.8rem;
   margin-left: auto;
@@ -52,11 +53,13 @@
 
 @media (max-width: 767px) {
   .cookbook__post {
-    width: 45%;
+    width: 8rem;
     height: 13rem;
     margin: 0.2rem;
   }
   .cookbook__post--btn {
     font-size: 0.6rem;
+    padding: 0.3rem;
+    border: solid black 1px;
   }
 }

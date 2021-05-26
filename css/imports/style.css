@@ -42,4 +42,7 @@ a {
   p {
     font-size: var(--font-mobile);
   }
+  li {
+    font-size: var(--font-mobile);
+  }
 }
