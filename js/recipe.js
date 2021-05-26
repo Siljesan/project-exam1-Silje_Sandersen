@@ -9,15 +9,17 @@ async function getDetails(recipeId) {
         console.log(result);
         console.log(result.content.rendered)
 
+        document.title = `What's Cookin' | ${result.title.rendered}`;
+
             document.querySelector('main').innerHTML += `
             <h1>${result.title.rendered}</h1>
             <section class="recipe-container">
                 ${result.content.rendered}
             </section>`
 
-            document.getElementsByClassName('.recipeHero-img').onclick = function(){
+            document.getElementsByClassName('recipeHero--img').onclick = function(){
                 document.getElementById('myModal').style.display = 'block';
-                document.getElementById('img01').src = result.better_featured_image.source_url;
+                document.getElementById('img01').src = this.src;
             }
 
     } catch (error) {

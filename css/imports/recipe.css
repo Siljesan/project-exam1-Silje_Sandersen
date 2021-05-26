@@ -1,12 +1,12 @@
 .recipeHero {
   width: fit-content;
   margin: 0 auto;
-  cursor: pointer;
-  transition: 0.3s;
 }
 .recipeHero--img {
   max-width: 100%;
   height: auto;
+  cursor: pointer;
+  transition: 0.3s;
 }
 .recipeHero:hover {
   opacity: 0.7;
@@ -56,9 +56,6 @@
   display: block;
   width: 80%;
   max-width: 700px;
-}
-.modal-content,
-#caption {
   animation-name: zoom;
   animation-duration: 0.6s;
 }

@@ -43,6 +43,7 @@
 .contactError {
   color: orangered;
   display: none;
+  margin: 0;
 }
 .hide {
   display: none;

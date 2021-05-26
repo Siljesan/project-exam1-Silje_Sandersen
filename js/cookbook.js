@@ -4,31 +4,29 @@ async function getPosts(url) {
     try {
         const response = await fetch(url);
         const result = await response.json();
+        let classChange = '';
         console.log(result);
-        result.forEach(element => {
-            //count++
-            document.querySelector('.cookbook').innerHTML += `
-            <a href="recipe.html?id=${element.id}"><div class="cookbook__post">
-            <div class="cookbook__post--img"><img class="featured--img" src="${element.better_featured_image.source_url}"></div>
-            <h2>${element.title.rendered}</h2>
-            <a href="recipe.html?id=${element.id}"><button class="cookbook__post--btn">Check out recipe!</button></a>
-            </div></a>`
-        });
 
-            //for(let i = 0; i < result.length; i++){
-            //    console.log(result[i])
-            //    if(i==2){
-            //        break
-            //    }
-            // document.querySelector('main').innerHTML += `
-            //<div class="home__post">
-            //<div class="home__post--info">
-            //<h2>${result[i].title}</h2>
-            //<p>${result[i].id}</p>
-            //</div>
-            //<div class="home__post--img"></div>
-            //</div>`   
-            //};
+        for(let i = 0; i < result.length; i++){
+
+            if(i >= 10){
+                classChange = 'hide'
+            }
+            
+            document.querySelector('.cookbook__more').onclick = function(){ classChange = 'show' };
+
+            for(let i = 0; i < result[i].title.length; i++){}
+            for(let i = 0; i < result[i].excerpt.length; i++){}
+            for(let i = 0; i < result[i].better_featured_image.length; i++){}
+            
+            document.querySelector('.cookbook').innerHTML +=  `
+            <a href="recipe.html?id=${result[i].id}"><div class="cookbook__post ${classChange}">
+            <div class="cookbook__post--img"><img class="featured--img" src="${result[i].better_featured_image.source_url}"></div>
+            <h2>${result[i].title.rendered}</h2>
+            <a href="recipe.html?id=${result[i].id}"><button class="cookbook__post--btn">Check out recipe!</button></a>
+            </div></a>`
+            
+        };
 
     } catch (error) {
         document.querySelector('.alert').innerHTML += showAlertToUser('An error occured','danger')
