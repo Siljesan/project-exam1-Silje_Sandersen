@@ -26,7 +26,7 @@ async function getPosts(url) {
             <i class="fas fa-chevron-right"></i>
             </div>
 	        </div>
-	        <div class="home__post--img"><img class="featured--img" src="${result[i].better_featured_image.source_url}"></div>
+	        <div class="home__post--img"><img class="featured--img" src="${result[i].better_featured_image.source_url}" alt="${result[i].better_featured_image.alt_text}"></div>
 	        </div></a>`
 
         };
