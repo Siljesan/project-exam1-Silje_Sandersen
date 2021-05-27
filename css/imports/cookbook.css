@@ -74,12 +74,15 @@
 
 @media (max-width: 767px) {
   .cookbook__post {
-    width: 8rem;
+    width: 9.5rem;
     height: 14rem;
     margin: 0.2rem;
   }
   .cookbook__post--btn {
     font-size: 0.6rem;
     padding: 0.3rem;
+  }
+  .cookbook__more {
+    font-size: var(--font-mobile);
   }
 }
