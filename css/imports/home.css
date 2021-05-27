@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 .heroBanner {
-  background-image: url(../../img/Group\ 11@2x.jpg);
+  background-image: url(../../img/hero@2x\ –\ Kopi.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -16,6 +16,7 @@
   vertical-align: middle;
   display: table-cell;
   font-weight: var(--light);
+  color: white;
 }
 .heroBanner__text--h1 {
   font-weight: var(--light);
@@ -30,7 +31,7 @@
   font-size: 1.2rem;
 }
 .heroBanner__text--cta a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 .heroBanner__text--cta a:hover,

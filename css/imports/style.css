@@ -5,6 +5,7 @@ body {
 }
 main {
   margin: var(--margins-desktop);
+  max-width: 2000px;
 }
 .danger {
   border: solid 2px red;
