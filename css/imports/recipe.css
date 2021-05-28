@@ -96,4 +96,16 @@
   .recipe__text--steps {
     width: 100%;
   }
+  .recipeMain {
+    max-width: 80%;
+  }
+  .recipe__text--ingredients {
+    width: fit-content;
+  }
+}
+
+@media (max-width: 767px) {
+  .recipe__text--ingredients {
+    margin: 0 auto;
+  }
 }
