@@ -25,6 +25,7 @@ async function getDetails(recipeId) {
 
             document.querySelector('.recipeHero--img').onclick = function(){
                 document.getElementById('myModal').style.display = 'block';
+                document.getElementById('img01').src = this.src
             };
 
             document.querySelector('#myModal').onclick = function(){
