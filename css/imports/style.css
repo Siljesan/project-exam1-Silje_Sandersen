@@ -4,8 +4,8 @@ body {
   font-family: var(--font);
 }
 main {
-  margin: var(--margins-desktop);
-  max-width: 2000px;
+  margin: 0 auto;
+  max-width: 85rem;
 }
 .danger {
   border: solid 2px red;
@@ -35,11 +35,14 @@ a {
 }
 
 @media (max-width: 991px) {
+  main {
+    max-width: 80%;
+  }
 }
 
 @media (max-width: 767px) {
   main {
-    margin: var(--margins-mobile);
+    margin: 0 auto;
   }
   h1 {
     font-size: 1.5rem;
@@ -50,10 +53,9 @@ a {
   h3 {
     font-size: 0.9rem;
   }
-  p {
-    font-size: var(--font-mobile);
-  }
-  li {
+  p,
+  li,
+  label {
     font-size: var(--font-mobile);
   }
 }

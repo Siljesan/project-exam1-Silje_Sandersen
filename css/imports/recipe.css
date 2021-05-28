@@ -1,11 +1,15 @@
+.recipeMain {
+  max-width: 70rem;
+  margin: 0 auto;
+}
 .recipeHero {
-  width: fit-content;
+  width: 100%;
+  height: fit-content;
   margin: 0 auto;
 }
 .recipeHero--img {
-  width: auto;
+  width: 100%;
   height: auto;
-  max-height: 25rem;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -14,16 +18,21 @@
 }
 .recipe__text {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-top: 1rem;
 }
 .recipe__text--steps {
   width: 50%;
+}
+.recipe__text--ingredients {
+  border: solid black 1px;
+  padding: 0rem 1rem 1rem 1rem;
 }
 .recipe__tips {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 2rem;
 }
 .recipe__tips--text {
@@ -31,14 +40,13 @@
   height: fit-content;
 }
 .recipeImg {
-  width: fit-content;
+  width: 50%;
   height: fit-content;
   margin: 0;
 }
 .recipeImg-one {
-  width: auto;
+  width: 100%;
   height: auto;
-  max-height: 25rem;
 }
 
 .modal {

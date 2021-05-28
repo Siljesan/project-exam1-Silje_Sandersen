@@ -19,11 +19,12 @@
 .contact__form--submit {
   background: none;
   border: solid 3px black;
-  width: 30%;
   margin-top: 1rem;
   font-family: var(--font);
   font-size: 1.2rem;
   font-weight: var(--light);
+  padding: 0.3;
+  width: fit-content;
 }
 .contact__form--submit:hover {
   font-size: 1.3rem;
@@ -67,5 +68,8 @@
   }
   .contact__info--text {
     margin: 0 auto;
+  }
+  .contact__form--submit {
+    font-size: 1rem;
   }
 }

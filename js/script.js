@@ -22,7 +22,7 @@ async function getPosts(url) {
 	        <h2>${result[i].title.rendered}</h2>
 	        <p>${result[i].excerpt.rendered}</p>
             <div class="home__post--cta">
-            <p>Read more!</p>
+            <p>Read more</p>
             <i class="fas fa-chevron-right"></i>
             </div>
 	        </div>
