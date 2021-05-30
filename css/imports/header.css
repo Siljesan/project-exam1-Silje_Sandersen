@@ -53,6 +53,9 @@ header {
 #menu__hamburger-menu {
   display: none;
 }
+.thisPage {
+  font-weight: var(--regular);
+}
 
 @media (max-width: 991px) {
   .logo__title {

@@ -29,6 +29,7 @@
 .contact__form--submit:hover {
   font-size: 1.3rem;
   font-weight: var(--regular);
+  cursor: pointer;
 }
 .contact__info {
   width: 30%;
