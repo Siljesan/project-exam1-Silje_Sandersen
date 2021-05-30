@@ -7,7 +7,7 @@ async function getDetails(recipeId) {
         const response = await fetch('https://noroffcors.herokuapp.com/'+'http://api.siljes.tech/wp-json/wp/v2/posts/' + recipeId);
         const result = await response.json();
         console.log(result);
-        console.log(result.content.rendered)
+        console.log(result.content.rendered);
 
         document.querySelector('.loading').classList.add('hide');
 
@@ -39,6 +39,6 @@ async function getDetails(recipeId) {
             document.querySelector('.alert').innerHTML = '';
         }, 3000);
     }
-}
+};
 
 getDetails(id);

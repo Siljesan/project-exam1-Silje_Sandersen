@@ -38,7 +38,7 @@ btn.onclick = function (event) {
     } else {
         messageError.classList.add('show');
         messageError.classList.remove('hide');
-    }
+    };
 
     function testLength(element, length) {
         if (element.length > length) {
